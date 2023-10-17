@@ -42,23 +42,36 @@ files = {'file': ('report.pdf', open('report.pdf', 'rb'))}
 response = requests.post(url, data=data, files=files)
 
 print(response.json())
+```
 The script returns results for event detection, sentiment analysis, risk assessment, NER analysis, volatility mentions, and M&A information.
 
 Configuration
 Customize event keywords and related terms by modifying the event_keywords_and_related dictionary in the script.
-
+```
 event_keywords_and_related = {
     "earnings report": ["financial report", "earnings statement"],
     "interest rate": ["rate change", "Fed policy"],
     # Add more event keywords and related terms here
 }
-License
+```
+## Frontend
+* Next.js
+* Axios
+* React
+
+## Backend
+* Flask
+* Vader
+* Spacy
+* PyPDF2
+
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Acknowledgments
+## Acknowledgments
 This project relies on various Python libraries for NLP, PDF processing, and sentiment analysis.
 
-Happy trading!
+## Contact Information
+If you have any questions or suggestions, feel free to contact me.
 
-You can copy and paste this single code snippet into your `README.md` for the NLP script's documentation.
-```
+Happy trading
